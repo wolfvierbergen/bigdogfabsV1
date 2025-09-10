@@ -41,7 +41,7 @@ export const Intro = () => {
         className="font-heading max-w-3xl text-4xl font-extrabold md:text-5xl"
       >
         Hi I&#39;m{' '}
-        <span className="bg-gradient-to-r from-rose-700 to-pink-600 bg-clip-text text-transparent">
+        <span className="bg-gradient-to-r from-blue-800 to-blue-400 bg-clip-text text-transparent">
           Wolf Vierbergen
         </span>{' '}
         designer, fabricator & constructor.

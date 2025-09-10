@@ -21,11 +21,32 @@ export const links = [
 
 export const projectsData = [
   {
+    slug: 'custom-steel-fabrication',
     image: '/images/project-1.webp',
     title: 'Custom Project 1',
     description:
       'A custom fabrication project showcasing precision engineering and innovative design solutions.',
+    detailedDescription: `
+      This comprehensive steel fabrication project demonstrates our expertise in precision engineering and innovative design solutions. From initial concept through final installation, we employed advanced CAD design techniques and state-of-the-art CNC machining to deliver a product that exceeds industry standards.
+
+      The project required careful planning and execution, incorporating multiple welding techniques and precision measurements to ensure structural integrity and aesthetic appeal.
+    `,
     technologies: ['Steel', 'Welding', 'CAD Design', 'CNC Machining'],
+    images: {
+      hero: '/images/project-1.webp',
+      gallery: [
+        '/images/project1/gallery1.jpg',
+        '/images/project1/gallery2.jpg',
+        '/images/project1/gallery3.jpg',
+        '/images/project1/gallery4.jpg',
+      ],
+    },
+    specifications: {
+      material: 'High-grade steel',
+      dimensions: '2.5m x 1.8m x 0.8m',
+      weight: '450kg',
+      finishType: 'Powder coated',
+    },
     links: {
       preview: '#',
       github: '#',
@@ -33,11 +54,31 @@ export const projectsData = [
     },
   },
   {
+    slug: 'architectural-aluminum-piece',
     image: '/images/project-2.webp',
     title: 'Custom Project 2',
     description:
       'An architectural fabrication piece combining form and function with modern materials.',
+    detailedDescription: `
+      This architectural aluminum piece represents the perfect fusion of form and function, utilizing cutting-edge laser cutting technology and precise 3D modeling. The project showcases our ability to work with modern materials while maintaining the highest standards of craftsmanship.
+
+      Every aspect of this build was carefully planned, from material selection to final assembly, ensuring both structural integrity and visual appeal.
+    `,
     technologies: ['Aluminum', 'Laser Cutting', '3D Modeling', 'Assembly'],
+    images: {
+      hero: '/images/project-2.webp',
+      gallery: [
+        '/images/project2/gallery1.jpg',
+        '/images/project2/gallery2.jpg',
+        '/images/project2/gallery3.jpg',
+      ],
+    },
+    specifications: {
+      material: 'Marine-grade aluminum',
+      dimensions: '3.2m x 2.1m x 1.2m',
+      weight: '180kg',
+      finishType: 'Anodized finish',
+    },
     links: {
       preview: '#',
       github: '#',
@@ -45,18 +86,40 @@ export const projectsData = [
     },
   },
   {
+    slug: 'mixed-materials-construction',
     image: '/images/project-3.webp',
     title: 'Custom Project 3',
     description:
       'A specialized construction project demonstrating advanced fabrication techniques and attention to detail.',
+    detailedDescription: `
+      This specialized construction project challenged our team to combine multiple materials and fabrication techniques in a single build. The result showcases our versatility and attention to detail, demonstrating advanced welding, precision finishing, and professional installation practices.
+
+      The project required innovative solutions and careful coordination between different fabrication processes to achieve the desired outcome.
+    `,
     technologies: ['Mixed Materials', 'Welding', 'Finishing', 'Installation'],
+    images: {
+      hero: '/images/project-3.webp',
+      gallery: [
+        '/images/project3/gallery1.jpg',
+        '/images/project3/gallery2.jpg',
+        '/images/project3/gallery3.jpg',
+        '/images/project3/gallery4.jpg',
+        '/images/project3/gallery5.jpg',
+      ],
+    },
+    specifications: {
+      material: 'Steel and aluminum composite',
+      dimensions: '4.0m x 2.5m x 1.5m',
+      weight: '320kg',
+      finishType: 'Multi-stage coating',
+    },
     links: {
       preview: '#',
       github: '#',
       githubApi: '#',
     },
   },
-] as const;
+];
 
 export const experiencesData = [
   {

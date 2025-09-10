@@ -28,7 +28,7 @@ const fadeInAnimationVariants = {
 };
 
 export const Project = ({ project, index }: TProps) => {
-  const { image, title, description, technologies, links } = project;
+  const { slug, image, title, description, technologies } = project;
 
   return (
     <motion.div
@@ -42,22 +42,29 @@ export const Project = ({ project, index }: TProps) => {
       className="flex flex-col rounded border p-5 md:w-1/2"
     >
       <Link
-        href={links.github}
-        aria-label={title}
-        target="_blank"
-        className="overflow-hidden rounded"
+        href={`/projects/${slug}`}
+        className="group block"
+        aria-label={`View ${title} project details`}
       >
-        <Image
-          src={image}
-          alt={title}
-          height={390}
-          width={600}
-          className="rounded transition-transform hover:scale-105"
-        />
+        <div className="overflow-hidden rounded">
+          <Image
+            src={image}
+            alt={title}
+            height={390}
+            width={600}
+            className="rounded transition-transform duration-300 group-hover:scale-105"
+            loading="lazy"
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+        </div>
+        <h3 className="group-hover:text-primary mt-3 text-xl font-medium transition-colors">
+          {title}
+        </h3>
+        <p className="text-muted-foreground group-hover:text-foreground mb-2 mt-1 transition-colors">
+          {description}
+        </p>
       </Link>
-      <h3 className="mt-3 text-xl font-medium">{title}</h3>
-      <p className="text-muted-foreground mb-2 mt-1">{description}</p>
-      <div className="flex flex-wrap gap-2">
+      <div className="mt-auto flex flex-wrap gap-2">
         {technologies.map((tech) => (
           <span className="rounded-full border px-3 py-1 text-sm" key={tech}>
             {tech}
