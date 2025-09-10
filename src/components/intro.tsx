@@ -54,7 +54,8 @@ export const Intro = () => {
         }}
         className="text-muted-foreground max-w-xl"
       >
-        Welcome to Big Dog Fabrications. I&#39;m passionate about creating custom builds and bringing ideas to life through design and fabrication.
+        Welcome to Big Dog Fabrications. I&#39;m passionate about creating
+        custom builds and bringing ideas to life through design and fabrication.
       </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
