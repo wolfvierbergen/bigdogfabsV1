@@ -10,14 +10,6 @@ export const links = [
     hash: '#home',
   },
   {
-    name: 'About',
-    hash: '#about',
-  },
-  {
-    name: 'Experience',
-    hash: '#experience',
-  },
-  {
     name: 'Projects',
     hash: '#projects',
   },
@@ -29,27 +21,39 @@ export const links = [
 
 export const projectsData = [
   {
-    image: '/images/project-2.webp',
-    title: 'Next-starter',
+    image: '/images/project-1.webp',
+    title: 'Custom Project 1',
     description:
-      'A Next.js starter template, packed with features like TypeScript, Tailwind CSS, Next-auth, Eslint, Stripe, testing tools and more.',
-    technologies: ['Next.js', 'Tailwind', 'Shadcn/ui', 'Next-auth', 'Prisma'],
+      'A custom fabrication project showcasing precision engineering and innovative design solutions.',
+    technologies: ['Steel', 'Welding', 'CAD Design', 'CNC Machining'],
     links: {
-      preview: 'https://next-starter-skolaczk.vercel.app',
-      github: 'https://github.com/Skolaczk/next-starter',
-      githubApi: 'https://api.github.com/repos/Skolaczk/next-starter',
+      preview: '#',
+      github: '#',
+      githubApi: '#',
     },
   },
   {
-    image: '/images/project-1.webp',
-    title: 'SocialHub',
+    image: '/images/project-2.webp',
+    title: 'Custom Project 2',
     description:
-      'SocialHub is a next-generation social media app developed using Next.js and Nest.js.',
-    technologies: ['Next.js', 'TypeScript', ' Nest.js', 'Tailwind', 'Prisma'],
+      'An architectural fabrication piece combining form and function with modern materials.',
+    technologies: ['Aluminum', 'Laser Cutting', '3D Modeling', 'Assembly'],
     links: {
-      preview: 'https://socialhub-ms.vercel.app/',
-      github: 'https://github.com/Skolaczk/SocialHub',
-      githubApi: 'https://api.github.com/repos/Skolaczk/SocialHub',
+      preview: '#',
+      github: '#',
+      githubApi: '#',
+    },
+  },
+  {
+    image: '/images/project-3.webp',
+    title: 'Custom Project 3',
+    description:
+      'A specialized construction project demonstrating advanced fabrication techniques and attention to detail.',
+    technologies: ['Mixed Materials', 'Welding', 'Finishing', 'Installation'],
+    links: {
+      preview: '#',
+      github: '#',
+      githubApi: '#',
     },
   },
 ] as const;
