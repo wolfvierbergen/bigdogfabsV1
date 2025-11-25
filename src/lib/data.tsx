@@ -21,11 +21,43 @@ export const links = [
 
 export const projectsData = [
   {
-    image: '/images/project-1.webp',
-    title: 'Custom Project 1',
-    description:
-      'A custom fabrication project showcasing precision engineering and innovative design solutions.',
-    technologies: ['Steel', 'Welding', 'CAD Design', 'CNC Machining'],
+    slug: 'wadi-deck',
+    image: '/images/wadi-deck-thumbnail.webp',
+    title: 'Wooden deck',
+    description: 'A custom wooden deck',
+    detailedDescription: `
+      The customer wanted a deck built over their pond to increase the usable space on the terrace and fill the rounded shape. 
+    
+      A challenge in this built was the rounded shape of the pond and the presence of water at the bottom of the pond.
+      A 3d scan of the area was done and initial CAD drawings were made to get an idea of the final shape.
+  
+      The deck consists of a sub-frame made from used wood, and decking made from IPE hardwood. Footings are set in concrete and raised off the ground to keep the wood dry.
+
+      The railing is made from stainless steel wiring, to keep the plants visible from the terrace and minimise the visual impact on the area. 
+
+      As this is a custom project, everything in this build was made on-site to perfectly match the surrounding shape.
+
+    `,
+    technologies: ['Photogrammetry', 'Carpentry', 'CAD Design'],
+    images: {
+      hero: '/images/wadi-deck-thumbnail.webp',
+      gallery: [
+        '/images/wadi-deck/wadi-1.jpg',
+        '/images/wadi-deck/wadi-2.jpg',
+        '/images/wadi-deck/wadi-3.jpg',
+        '/images/wadi-deck/wadi-4.jpg',
+        '/images/wadi-deck/wadi-5.jpg',
+        '/images/wadi-deck/wadi-6.jpg',
+        '/images/wadi-deck/wadi-7.jpg',
+        '/images/wadi-deck/wadi-8.jpg',
+        '/images/wadi-deck/wadi-9.jpg',
+      ],
+    },
+    specifications: {
+      material: 'IPE hardwood',
+      dimensions: '5 m2',
+      finishType: 'Rubio monocoat: Teak',
+    },
     links: {
       preview: '#',
       github: '#',
@@ -33,11 +65,31 @@ export const projectsData = [
     },
   },
   {
+    slug: 'architectural-aluminum-piece',
     image: '/images/project-2.webp',
     title: 'Custom Project 2',
     description:
       'An architectural fabrication piece combining form and function with modern materials.',
+    detailedDescription: `
+      This architectural aluminum piece represents the perfect fusion of form and function, utilizing cutting-edge laser cutting technology and precise 3D modeling. The project showcases our ability to work with modern materials while maintaining the highest standards of craftsmanship.
+
+      Every aspect of this build was carefully planned, from material selection to final assembly, ensuring both structural integrity and visual appeal.
+    `,
     technologies: ['Aluminum', 'Laser Cutting', '3D Modeling', 'Assembly'],
+    images: {
+      hero: '/images/project-2.webp',
+      gallery: [
+        '/images/project2/gallery1.jpg',
+        '/images/project2/gallery2.jpg',
+        '/images/project2/gallery3.jpg',
+      ],
+    },
+    specifications: {
+      material: 'Marine-grade aluminum',
+      dimensions: '3.2m x 2.1m x 1.2m',
+      weight: '180kg',
+      finishType: 'Anodized finish',
+    },
     links: {
       preview: '#',
       github: '#',
@@ -45,18 +97,40 @@ export const projectsData = [
     },
   },
   {
+    slug: 'mixed-materials-construction',
     image: '/images/project-3.webp',
     title: 'Custom Project 3',
     description:
       'A specialized construction project demonstrating advanced fabrication techniques and attention to detail.',
+    detailedDescription: `
+      This specialized construction project challenged our team to combine multiple materials and fabrication techniques in a single build. The result showcases our versatility and attention to detail, demonstrating advanced welding, precision finishing, and professional installation practices.
+
+      The project required innovative solutions and careful coordination between different fabrication processes to achieve the desired outcome.
+    `,
     technologies: ['Mixed Materials', 'Welding', 'Finishing', 'Installation'],
+    images: {
+      hero: '/images/project-3.webp',
+      gallery: [
+        '/images/project3/gallery1.jpg',
+        '/images/project3/gallery2.jpg',
+        '/images/project3/gallery3.jpg',
+        '/images/project3/gallery4.jpg',
+        '/images/project3/gallery5.jpg',
+      ],
+    },
+    specifications: {
+      material: 'Steel and aluminum composite',
+      dimensions: '4.0m x 2.5m x 1.5m',
+      weight: '320kg',
+      finishType: 'Multi-stage coating',
+    },
     links: {
       preview: '#',
       github: '#',
       githubApi: '#',
     },
   },
-] as const;
+];
 
 export const experiencesData = [
   {
