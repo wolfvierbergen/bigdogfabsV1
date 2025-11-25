@@ -21,31 +21,42 @@ export const links = [
 
 export const projectsData = [
   {
-    slug: 'custom-steel-fabrication',
-    image: '/images/project-1.webp',
-    title: 'Custom Project 1',
-    description:
-      'A custom fabrication project showcasing precision engineering and innovative design solutions.',
+    slug: 'wadi-deck',
+    image: '/images/wadi-deck-thumbnail.webp',
+    title: 'Wooden deck',
+    description: 'A custom wooden deck',
     detailedDescription: `
-      This comprehensive steel fabrication project demonstrates our expertise in precision engineering and innovative design solutions. From initial concept through final installation, we employed advanced CAD design techniques and state-of-the-art CNC machining to deliver a product that exceeds industry standards.
+      The customer wanted a deck built over their pond to increase the usable space on the terrace and fill the rounded shape. 
+    
+      A challenge in this built was the rounded shape of the pond and the presence of water at the bottom of the pond.
+      A 3d scan of the area was done and initial CAD drawings were made to get an idea of the final shape.
+  
+      The deck consists of a sub-frame made from used wood, and decking made from IPE hardwood. Footings are set in concrete and raised off the ground to keep the wood dry.
 
-      The project required careful planning and execution, incorporating multiple welding techniques and precision measurements to ensure structural integrity and aesthetic appeal.
+      The railing is made from stainless steel wiring, to keep the plants visible from the terrace and minimise the visual impact on the area. 
+
+      As this is a custom project, everything in this build was made on-site to perfectly match the surrounding shape.
+
     `,
-    technologies: ['Steel', 'Welding', 'CAD Design', 'CNC Machining'],
+    technologies: ['Photogrammetry', 'Carpentry', 'CAD Design'],
     images: {
-      hero: '/images/project-1.webp',
+      hero: '/images/wadi-deck-thumbnail.webp',
       gallery: [
-        '/images/project1/gallery1.jpg',
-        '/images/project1/gallery2.jpg',
-        '/images/project1/gallery3.jpg',
-        '/images/project1/gallery4.jpg',
+        '/images/wadi-deck/wadi-1.jpg',
+        '/images/wadi-deck/wadi-2.jpg',
+        '/images/wadi-deck/wadi-3.jpg',
+        '/images/wadi-deck/wadi-4.jpg',
+        '/images/wadi-deck/wadi-5.jpg',
+        '/images/wadi-deck/wadi-6.jpg',
+        '/images/wadi-deck/wadi-7.jpg',
+        '/images/wadi-deck/wadi-8.jpg',
+        '/images/wadi-deck/wadi-9.jpg',
       ],
     },
     specifications: {
-      material: 'High-grade steel',
-      dimensions: '2.5m x 1.8m x 0.8m',
-      weight: '450kg',
-      finishType: 'Powder coated',
+      material: 'IPE hardwood',
+      dimensions: '5 m2',
+      finishType: 'Rubio monocoat: Teak',
     },
     links: {
       preview: '#',
