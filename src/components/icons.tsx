@@ -11,6 +11,7 @@ import {
   Github,
   Grid3X3,
   Linkedin,
+  Loader2,
   LucideProps,
   Mail,
   Moon,
@@ -34,6 +35,7 @@ export const Icons = {
   star: Star,
   calendar: Calendar,
   building: Building2,
+  spinner: Loader2,
   audiophile: (props: LucideProps) => (
     <svg
       width="64"

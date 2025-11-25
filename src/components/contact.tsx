@@ -20,19 +20,24 @@ export const Contact = () => {
     register,
     handleSubmit,
     reset,
-    formState: { errors },
+    formState: { errors, isSubmitting },
   } = useForm<TFormSchema>({ resolver: zodResolver(formSchema) });
 
   const onSubmit = async (values: TFormSchema) => {
-    const { data, error } = await sendEmailAction(values);
+    try {
+      const { data, error } = await sendEmailAction(values);
 
-    if (error) {
-      toast.error(error);
-      return;
+      if (error) {
+        toast.error(error);
+        return;
+      }
+
+      toast.success(data);
+      reset();
+    } catch (error) {
+      toast.error('Failed to send email. Please try again.');
+      console.error('Email send error:', error);
     }
-
-    toast.success(data);
-    reset();
   };
 
   return (
@@ -126,8 +131,16 @@ export const Contact = () => {
             </p>
           )}
         </div>
-        <Button size="lg">
-          Submit <Icons.arrowRight className="ml-2 size-4" />
+        <Button type="submit" size="lg" disabled={isSubmitting}>
+          {isSubmitting ? (
+            <>
+              Sending... <Icons.spinner className="ml-2 size-4 animate-spin" />
+            </>
+          ) : (
+            <>
+              Submit <Icons.arrowRight className="ml-2 size-4" />
+            </>
+          )}
         </Button>
       </form>
     </motion.section>
