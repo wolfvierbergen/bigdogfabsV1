@@ -119,30 +119,21 @@ const ProjectPage = async ({ params }: ProjectPageProps) => {
           <div className="bg-muted/50 rounded-lg p-6">
             <h3 className="mb-4 text-lg font-semibold">Specifications</h3>
             <dl className="space-y-3">
-              <div>
-                <dt className="text-muted-foreground text-sm font-medium">
-                  Material
-                </dt>
-                <dd className="text-sm">{project.specifications.material}</dd>
-              </div>
-              <div>
-                <dt className="text-muted-foreground text-sm font-medium">
-                  Dimensions
-                </dt>
-                <dd className="text-sm">{project.specifications.dimensions}</dd>
-              </div>
-              <div>
-                <dt className="text-muted-foreground text-sm font-medium">
-                  Weight
-                </dt>
-                <dd className="text-sm">{project.specifications.weight}</dd>
-              </div>
-              <div>
-                <dt className="text-muted-foreground text-sm font-medium">
-                  Finish
-                </dt>
-                <dd className="text-sm">{project.specifications.finishType}</dd>
-              </div>
+              {Object.entries(project.specifications).map(([key, value]) => {
+                // Convert camelCase to Title Case for labels
+                const label = key
+                  .replace(/([A-Z])/g, ' $1')
+                  .replace(/^./, (str) => str.toUpperCase());
+
+                return (
+                  <div key={key}>
+                    <dt className="text-muted-foreground text-sm font-medium">
+                      {label}
+                    </dt>
+                    <dd className="text-sm">{value}</dd>
+                  </div>
+                );
+              })}
             </dl>
           </div>
         </div>

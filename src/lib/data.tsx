@@ -51,6 +51,7 @@ export const projectsData = [
         '/images/wadi-deck/wadi-7.jpg',
         '/images/wadi-deck/wadi-8.jpg',
         '/images/wadi-deck/wadi-9.jpg',
+        '/images/wadi-deck/wadi-10.jpg',
       ],
     },
     specifications: {
